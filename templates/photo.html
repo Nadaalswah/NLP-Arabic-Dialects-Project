@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Prediction</title>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/all.min.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/photo.css') }}">
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="wrapper">
+       
+        <!-- Start Content -->
+        <div class="container frame">
+            <div class="row center">
+                <div class="upload-block">
+                    <form action="{{ url_for('predict')}}" method="post" class="predictForm">
+                        <h2 class="H1header">Enter text to predict</h2>
+                        <div class="line"></div>
+                        <div class="centered">
+                            <textarea name="text" rows="10" cols="50" placeholder="Enter your text here..." required></textarea>
+                        </div>
+                        <p>
+                            <div class="btn-block centered">
+                                <input type="submit" value="Predict" class="btn" id="predict-btn">
+                            </div>
+                        </p>
+                    </form>
+                    <h4 class="st"> {{ prediction_text }} </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='styles/js/index.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo</title>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/all.min.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/index.css') }}">
+</head>
+<body>
+         <!-- Star Header -->
+    <div class="wrapper">
+        <div class="side_bar">
+            <div class="side_bar_top">
+                <div class="profile_pic">
+                    <img src="../static/styles/images/logo.jpeg" alt="profile">
+                </div>
+                <div class="profile_info">
+                    <h3>Weather Image Recognition</h3>
+                </div>
+            </div>
+            <div class="side_bar_bottom">
+                <ul>
+                    <li  class="active">
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span class="item">HOME</span></a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-search"></i></span>
+                            <span class="item">SEARCH</span></a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li method="['post', 'get']" action="{{ url_for('survey') }}">
+                        <span class="top_curve"></span>
+                        <a href="{{ url_for('survey') }}">
+                            <span class="icon"><i class="fas fa-poll-h"></i></span>
+                            <span class="item">SURVEY</span></a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li method="['post', 'get']" action="{{ url_for('photo') }}">
+                        <span class="top_curve"></span>
+                        <a href="{{ url_for('photo') }}">
+                            <span class="icon"><i class="fas fa-camera-retro"></i></span>
+                            <span class="item">PHOTO</span></a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li method="['post', 'get']" action="{{ url_for('demo') }}">
+                        <span class="top_curve"></span>
+                        <a href="{{ url_for('demo') }}">
+                            <span class="icon"><i class="fas fa-video"></i></span>
+                            <span class="item">VIDEO</span></a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li>
+                        <span class="top_curve"></span>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="item">SETTINGS</span></a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                    <li method="['post', 'get']" action="{{ url_for('logo') }}">
+                        <span class="top_curve"></span>
+                        <a href="{{ url_for('logo') }}">
+                            <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                            <span class="item">LOG OUT</span></a>
+                        <span class="bottom_curve"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End header -->
+            <!-- star photo -->
+           <div class="photo">
+                <div class="pho"><img src="../static/styles/images/1.jpeg"></div>
+                <div class="pho"><img src="../static/styles/images/2.jpeg"></div>
+                <div class="pho"><img src="../static/styles/images/3.jpeg"></div>
+                <div class="pho"><img src="../static/styles/images/4.jpeg"></div>
+                <div class="pho"><img src="../static/styles/images/5.jpeg"></div>
+                <div class="pho"><img src="../static/styles/images/6.jpeg"></div>
+            </div>
+            <!-- End photo -->
+            <!-- Star Scroll -->
+            <div class="scroll">
+                <!-- Star Head -->
+                <div class="head">
+                    <span>Image <p class="current-photo"></p> of <p class="total-photo"></p></span>
+                    <i class="close fas fa-times"></i>
+                </div>
+                <!-- End Head -->
+                <!-- Star Body -->
+                <div class="body">
+                    <div class="icon next"><i class="fas fa-angle-right"></i></div>
+                    <div class="icon prev"><i class="fas fa-angle-left"></i></div>
+                    <img src="images/6.jpg" alt="">
+                </div>
+                <!-- End Body -->
+            </div>
+        </div>
+    <script src="../static/styles/js/photo.js"></script>
+</body>
+</html>
