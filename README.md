@@ -10,6 +10,10 @@ This project focuses on classifying Arabic dialects, including Egyptian (EG), Le
 | 3            | MA (Moroccan)|
 | 4            | SD (Sudanese)|
 
+## Video Demonstration
+
+![Video Demonstration](https://github.com/Nadaalswah/NLP-Arabic-Dialects-Project/blob/main/Project%20GIF.gif)
+
 ## Dataset
 We used the following dataset for this project:
 - **Database Path**: `/kaggle/input/dialects-db/dialects_database.db`
