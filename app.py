@@ -49,9 +49,9 @@ class ArabicTextCleaner(BaseEstimator, TransformerMixin):
 app = Flask(__name__)
 
 # Load the preprocessing pipeline, vectorizer, and classifier using raw strings
-preprocessor = joblib.load(r'NLP\arabic_text_cleaner_pipeline.pkl')
-vectorizer = joblib.load(r'NLP\CountVectorizer_test.joblib')
-classifier = joblib.load(r'NLP\model\CountVectorizer_model.pkl')
+preprocessor = joblib.load(r'arabic_text_cleaner_pipeline.pkl')
+vectorizer = joblib.load(r'CountVectorizer_test.joblib')
+classifier = joblib.load(r'model\CountVectorizer_model.pkl')
 
 # Define the label mapping
 label_mapping = {0: 'EG', 1: 'LB', 2: 'LY', 3: 'MA', 4: 'SD'}
