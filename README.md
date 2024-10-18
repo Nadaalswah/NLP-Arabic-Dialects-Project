@@ -46,8 +46,8 @@ We train both machine learning and deep learning models for dialect classificati
 - **LSTM Model**: We developed an LSTM model for dialect classification.
 - Both models were saved for deployment.
 
-### Advanced Models
-We also explored other models before finalizing the best two, which are stored in the folder `advanced Notebook`.
+### Extra and advanced notebooks
+We also explored other models before finalizing the best two, which are stored in the folder `Extra and advanced notebooks`.
 
 ## How to Run the Project
 
