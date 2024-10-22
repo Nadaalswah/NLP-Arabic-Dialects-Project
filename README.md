@@ -1,6 +1,6 @@
 # NLP Arabic Dialects Classification Project
 
-This project focuses on classifying Arabic dialects, including Egyptian (EG), Lebanese (LB), Libyan (LY), Moroccan (MA), and Sudanese (SD). We aim to develop models that can accurately distinguish between these dialects based on text data.
+This project focuses on classifying Arabic dialects, including Egyptian (EG), Lebanese (LB), Libyan (LY), Moroccan (MA), and Sudanese (SD). We aim to develop models that accurately distinguish between these dialects based on text data.
 
 | Dialect Code | Dialect Name |
 |--------------|--------------|
@@ -42,12 +42,12 @@ In this notebook, we apply various cleaning and preprocessing steps to prepare t
 ### 3. **Model Training (Notebook 3)**
 We train both machine learning and deep learning models for dialect classification. In this notebook:
 - We experimented with and without handling imbalanced data.
-- **Logistic Regression**: We created a pipeline using `CountVectorizer` and `LogisticRegression` for text classification. We also used Grid Search for hyperparameter tuning.
-- **LSTM Model**: We developed an LSTM model for dialect classification.
+- **Machine Learning Models**: We created a pipeline using `CountVectorizer` and `LogisticRegression` for text classification, And we used Naive Bayes Classifier. We also used Grid Search for hyperparameter tuning.
+- **Deep Learning Models**: We developed an LSTM model and GRU for dialect classification.
 - Both models were saved for deployment.
 
 ### Extra and advanced notebooks
-We also explored other models before finalizing the best two, which are stored in the folder `Extra and advanced notebooks`.
+We also explored other models before finalizing the best, which are stored in the folder `Draft Notebooks`.
 
 ## How to Run the Project
 
